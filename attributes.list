@@ -75,6 +75,9 @@ fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
 # /bin/umount
 fattn[${#fattn[@]}]="/bin/umount"
 fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
+# /bin/mkdir
+fattn[${#fattn[@]}]="/bin/mkdir"
+fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
 
 ### c/sbin
 # /sbin/init
