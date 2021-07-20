@@ -1,124 +1,165 @@
-#!/bin/bash
-### DO NOT REMOVE THE FIRST LINES ###
-fattn=()
-fatt=()
-###
+/etc
+rw-rw-r--
+root
+root
 
-### c/
-# /etc
-fattn[${#fattn[@]}]="/etc"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /bin
-fattn[${#fattn[@]}]="/bin"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /sbin
-fattn[${#fattn[@]}]="/sbin"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /dev
-fattn[${#fattn[@]}]="/dev"
-fatt[${#fatt[@]}]="r--r--r--;root;root;"
-# /sys
-fattn[${#fattn[@]}]="/sys"
-fatt[${#fatt[@]}]="r--r--r--;root;root;"
-# /lib
-fattn[${#fattn[@]}]="/lib"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /var
-fattn[${#fattn[@]}]="/var"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /proc
-fattn[${#fattn[@]}]="/proc"
-fatt[${#fatt[@]}]="r--r--r--;root;root;"
-# /boot
-fattn[${#fattn[@]}]="/boot"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
+/bin
+rw-rw-r--
+root
+root
 
-### c/etc
-# /etc/release
-fattn[${#fattn[@]}]="/etc/release"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /etc/init.d
-fattn[${#fattn[@]}]="/etc/init.d"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /etc/official
-fattn[${#fattn[@]}]="/etc/official"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /etc/id
-fattn[${#fattn[@]}]="/etc/id"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /etc/hostname
-fattn[${#fattn[@]}]="/etc/hostname"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /etc/fstab
-fattn[${#fattn[@]}]="/etc/fstab"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
+/sbin
+rw-rw-r--
+root
+root
 
-### c/bin
-# /bin/shell
-fattn[${#fattn[@]}]="/bin/shell"
-fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
-# /bin/ls
-fattn[${#fattn[@]}]="/bin/ls"
-fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
-# /bin/pwd
-fattn[${#fattn[@]}]="/bin/pwd"
-fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
-# /bin/cat
-fattn[${#fattn[@]}]="/bin/cat"
-fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
-# /bin/touch
-fattn[${#fattn[@]}]="/bin/touch"
-fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
-# /bin/mount
-fattn[${#fattn[@]}]="/bin/mount"
-fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
-# /bin/umount
-fattn[${#fattn[@]}]="/bin/umount"
-fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
-# /bin/mkdir
-fattn[${#fattn[@]}]="/bin/mkdir"
-fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
+/dev
+r--r--r--
+root
+root
 
-### c/sbin
-# /sbin/init
-fattn[${#fattn[@]}]="/sbin/init"
-fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
-# /sbin/banner
-fattn[${#fattn[@]}]="/sbin/banner"
-fatt[${#fatt[@]}]="rwxrwxr-x;root;root;"
+/sys
+r--r--r--
+root
+root
 
-### c/dev
+/lib
+rw-rw-r--
+root
+root
 
-### c/sys
+/var
+rw-rw-r--
+root
+root
 
-### c/lib
-# /lib/system
-fattn[${#fattn[@]}]="/lib/system"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
+/proc
+r--r--r--
+root
+root
 
-### c/var
+/boot
+rw-rw-r--
+root
+root
 
-### c/etc/init.d
-# /etc/init.d/0-banner
-fattn[${#fattn[@]}]="/etc/init.d/0-banner"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /etc/init.d/5-users
-fattn[${#fattn[@]}]="/etc/init.d/5-users"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
-# /etc/init.d/100-ui
-fattn[${#fattn[@]}]="/etc/init.d/100-ui"
-fatt[${#fatt[@]}]="rw-rw-r--;root;root;"
+/etc/release
+rw-rw-r--
+root
+root
 
-### c/lib/system
-# /lib/system/usrsetup
-fattn[${#fattn[@]}]="/lib/system/usrsetup"
-fatt[${#fatt[@]}]="rwxrwxr--;root;root;"
-# /lib/system/initcfg
-fattn[${#fattn[@]}]="/lib/system/initcfg"
-fatt[${#fatt[@]}]="rwxrwxr--;root;root;"
-# /lib/system/users
-fattn[${#fattn[@]}]="/lib/system/users"
-fatt[${#fatt[@]}]="rw-rw----;root;root;"
-# /lib/system/ui
-fattn[${#fattn[@]}]="/lib/system/ui"
-fatt[${#fatt[@]}]="rwxrwxr--;root;root;"
+/etc/init.d
+rw-rw-r--
+root
+root
+
+/etc/official
+rw-rw-r--
+root
+root
+
+/etc/id
+rw-rw-r--
+root
+root
+
+/etc/hostname
+rw-rw-r--
+root
+root
+
+/etc/fstab
+rw-rw-r--
+root
+root
+
+/bin/shell
+rwxrwxr-x
+root
+root
+
+/bin/ls
+rwxrwxr-x
+root
+root
+
+/bin/pwd
+rwxrwxr-x
+root
+root
+
+/bin/cat
+rwxrwxr-x
+root
+root
+
+/bin/touch
+rwxrwxr-x
+root
+root
+
+/bin/mount
+rwxrwxr-x
+root
+root
+
+/bin/umount
+rwxrwxr-x
+root
+root
+
+/bin/mkdir
+rwxrwxr-x
+root
+root
+
+/sbin/init
+rwxrwxr-x
+root
+root
+
+/sbin/banner
+rwxrwxr-x
+root
+root
+
+/lib/system
+rw-rw-r--
+root
+root
+
+/etc/init.d/0-banner
+rw-rw-r--
+root
+root
+
+/etc/init.d/5-users
+rw-rw-r--
+root
+root
+
+/etc/init.d/100-ui
+rw-rw-r--
+root
+root
+
+/lib/system/usrsetup
+rwxrwxr--
+root
+root
+
+/lib/system/initcfg
+rwxrwxr--
+root
+root
+
+/lib/system/users
+rw-rw----
+root
+root
+
+/lib/system/ui
+rwxrwxr--
+root
+root
+
