@@ -118,6 +118,11 @@ rwxrwxr-x
 root
 root
 
+/bin/clear
+rwxrwxr-x
+root
+root
+
 /sbin/init
 rwxrwxr-x
 root
