@@ -113,6 +113,11 @@ rwxrwxr-x
 root
 root
 
+/bin/dmesg
+rwxrwxr-x
+root
+root
+
 /sbin/init
 rwxrwxr-x
 root
